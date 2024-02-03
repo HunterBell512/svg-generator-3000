@@ -1,13 +1,13 @@
 const Shape = require('./Shape');
 
-class Triangle extends Shape {
+class Circle extends Shape {
     constructor (text, color) {
         super(text, color);
     }
 
     render () {
-        return 0;
+        return `<circle cx="150" cy="100" r="50" fill="${this.color}"/>`;
     }
 }
 
-module.exports = Triangle;
+module.exports = Circle;
