@@ -1,12 +1,13 @@
 const Shape = require('./Shape');
 
 class Triangle extends Shape {
-    constructor (text, color) {
-        super(text, color);
+    constructor (text, textColor, color) {
+        super(text, textColor, color);
     }
 
     render () {
-        return `<polygon points="100, 0 200, 173 0, 173" fill="${this.color}"/>`;
+        return `    <polygon points="150, 0 250, 173 50, 173" fill="${this.color}"/>
+    <text x="50%" y="50%" dy=".8em" font-size="60" text-anchor="middle" fill="${this.textColor}">${this.text}</text>`;
     }
 }
 

@@ -1,5 +1,8 @@
 const inquirer = require('inquirer');
 const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
+const GenerateSVG = require('./utils/GenerateSVG');
+const WriteToFile = require('./utils/WriteToFile');
+
 inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt);
 
 function init () {
@@ -28,7 +31,7 @@ function init () {
             message: 'What color would you like the shape to be?'
         }
     ]).then(answers => {
-        GenerateSVG(answers);
+        WriteToFile('./output', '/logo.svg', GenerateSVG(answers));
     })
 }
 

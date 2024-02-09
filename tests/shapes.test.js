@@ -16,97 +16,88 @@ describe('Shape', () => {
 });
 
 describe('Triangle', () => {
-    describe('setColor', () => {
-        it('should set the color to blue', () => {
-            const tri = new Triangle();
+    describe('Object Creation', () => {
+        it('create an object with that matches the output parameters', () => {
+            const tri = new Triangle('svg', 'white', 'blue');
 
-            tri.setColor('blue');
-
-            expect(tri.render()).toEqual('<polygon points="100, 0 200, 173 0, 173" fill="blue"/>')
+            expect(tri.render()).toEqual(`    <polygon points="150, 0 250, 173 50, 173" fill="blue"/>
+    <text x="50%" y="50%" dy=".8em" font-size="60" text-anchor="middle" fill="white">svg</text>`)
         });
     });
 
-    describe('setColor', () => {
-        it('should set the color to red', () => {
-            const tri = new Triangle();
+    describe('Object Creation', () => {
+        it('create an object with that matches the output parameters', () => {
+            const tri = new Triangle('svg', 'white', 'red');
 
-            tri.setColor('red');
-
-            expect(tri.render()).toEqual('<polygon points="100, 0 200, 173 0, 173" fill="red"/>')
+            expect(tri.render()).toEqual(`    <polygon points="150, 0 250, 173 50, 173" fill="red"/>
+    <text x="50%" y="50%" dy=".8em" font-size="60" text-anchor="middle" fill="white">svg</text>`)
         });
     });
 
-    describe('setColor', () => {
-        it('should set the color to green', () => {
-            const tri = new Triangle();
+    describe('Object Creation', () => {
+        it('create an object with that matches the output parameters', () => {
+            const tri = new Triangle('svg', 'white', 'green');
 
-            tri.setColor('green');
-
-            expect(tri.render()).toEqual('<polygon points="100, 0 200, 173 0, 173" fill="green"/>')
+            expect(tri.render()).toEqual(`    <polygon points="150, 0 250, 173 50, 173" fill="green"/>
+    <text x="50%" y="50%" dy=".8em" font-size="60" text-anchor="middle" fill="white">svg</text>`)
         });
     });
 });
 
 describe('Circle', () => {
-    describe('setColor', () => {
-        it('should set the color to blue', () => {
-            const circle = new Circle();
+    describe('Object Creation', () => {
+        it('create an object with that matches the output parameters', () => {
+            const circle = new Circle('svg', 'white', 'blue');
 
-            circle.setColor('blue');
-
-            expect(circle.render()).toEqual('<circle cx="150" cy="100" r="50" fill="blue"/>')
+            expect(circle.render()).toEqual(`    <circle cx="150" cy="100" r="80" fill="blue"/>
+    <text x="50%" y="50%" font-size="60" dy=".3em" text-anchor="middle" fill="white">svg</text>`)
         });
     });
 
-    describe('setColor', () => {
-        it('should set the color to red', () => {
-            const circle = new Circle();
+    describe('Object Creation', () => {
+        it('create an object with that matches the output parameters', () => {
+            const circle = new Circle('svg', 'white', 'red');
 
-            circle.setColor('red');
-
-            expect(circle.render()).toEqual('<circle cx="150" cy="100" r="50" fill="red"/>')
+            expect(circle.render()).toEqual(`    <circle cx="150" cy="100" r="80" fill="red"/>
+    <text x="50%" y="50%" font-size="60" dy=".3em" text-anchor="middle" fill="white">svg</text>`)
         });
     });
 
-    describe('setColor', () => {
-        it('should set the color to green', () => {
-            const circle = new Circle();
+    describe('Object Creation', () => {
+        it('create an object with that matches the output parameters', () => {
+            const circle = new Circle('svg', 'white', 'green');
 
-            circle.setColor('green');
-
-            expect(circle.render()).toEqual('<circle cx="150" cy="100" r="50" fill="green"/>')
+            expect(circle.render()).toEqual(`    <circle cx="150" cy="100" r="80" fill="green"/>
+    <text x="50%" y="50%" font-size="60" dy=".3em" text-anchor="middle" fill="white">svg</text>`)
         });
     });
 });
 
 describe('Square', () => {
-    describe('setColor', () => {
-        it('should set the color to blue', () => {
-            const square = new Square();
+    describe('Object Creation', () => {
+        it('create an object with that matches the output parameters', () => {
+            const square = new Square('svg', 'white', 'blue');
 
-            square.setColor('blue');
-
-            expect(square.render()).toEqual('<rect width="200" height="200" fill="blue"/>')
+            expect(square.render()).toEqual(`    <rect width="200" height="200" x="50" fill="blue"/>
+    <text x="50%" y="50%" font-size="60" dy=".3em" text-anchor="middle" fill="white">svg</text>`)
         });
     });
 
-    describe('setColor', () => {
-        it('should set the color to red', () => {
-            const square = new Square();
+    describe('Object Creation', () => {
+        it('create an object with that matches the output parameters', () => {
+            const square = new Square('svg', 'white', 'red');
 
-            square.setColor('red');
-
-            expect(square.render()).toEqual('<rect width="200" height="200" fill="red"/>')
+            expect(square.render()).toEqual(`    <rect width="200" height="200" x="50" fill="red"/>
+    <text x="50%" y="50%" font-size="60" dy=".3em" text-anchor="middle" fill="white">svg</text>`)
         });
     });
 
-    describe('setColor', () => {
-        it('should set the color to green', () => {
-            const square = new Square();
+    describe('Object Creation', () => {
+        it('create an object with that matches the output parameters', () => {
+            const square = new Square('svg', 'white', 'green');
 
-            square.setColor('green');
-
-            expect(square.render()).toEqual('<rect width="200" height="200" fill="green"/>')
+            expect(square.render()).toEqual(`    <rect width="200" height="200" x="50" fill="green"/>
+    <text x="50%" y="50%" font-size="60" dy=".3em" text-anchor="middle" fill="white">svg</text>`)
         });
     });
 });
